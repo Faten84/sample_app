@@ -18,6 +18,11 @@ class SessionsController < ApplicationController
     sign_out
     redirect_to root_url
   end
+
+  def current_user?(user)
+    user == current_user
+  end
+
 end
 
 
